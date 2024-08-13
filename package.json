@@ -1,0 +1,23 @@
+{
+	"source": "src/index.html",
+	"scripts": {
+		"start": "parcel",
+		"build": "parcel build"
+	},
+	"alias": {
+		"process": false
+	},
+	"devDependencies": {
+		"@types/react": "^18.3.3",
+		"@types/react-dom": "^18.3.0",
+		"parcel": "^2.12.0",
+		"process": "^0.11.10",
+		"typescript": "^5.5.4"
+	},
+	"dependencies": {
+		"@types/papaparse": "^5.3.14",
+		"papaparse": "^5.4.1",
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1"
+	}
+}
