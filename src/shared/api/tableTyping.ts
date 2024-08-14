@@ -1,5 +1,5 @@
 import { ParseResult } from "papaparse";
-import { DataTable } from "./getCritarions";
+import { DataTable } from "./criterions";
 
 const tableTyping = (table: ParseResult<any>, hStart: number) : DataTable => {
     const result: DataTable = {
@@ -7,7 +7,7 @@ const tableTyping = (table: ParseResult<any>, hStart: number) : DataTable => {
         rows: [],
     };
 
-    for (let i = 1; i < table.data.length; i++) {
+    for (let i = 1; i < table.data.length - 1; i++) {
         result.rows.push([]);
 
         for (let j = 0; j < table.data[i].length; j++) {
